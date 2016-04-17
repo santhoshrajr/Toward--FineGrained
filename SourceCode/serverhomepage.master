@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="serverhomepage.master.cs" Inherits="serverhomepage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+     <asp:Image ID="Image1" runat="server" Height="135px" Width="1315px" 
+            ImageUrl="~/cloud-computing-icon-24255261 - Copy.jpg" />
+        <br />
+        <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" BackColor="DeepSkyBlue" 
+            DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" 
+            ForeColor="#0033CC" Height="45px" ScrollDownImageUrl="~/tosecur.png" 
+            StaticSubMenuIndent="10px" style="font-size: large; font-weight: 700" 
+            Width="1315px">
+            <StaticSelectedStyle BackColor="#507CD1" />
+            <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+            <DynamicHoverStyle BackColor="#284E98" ForeColor="White" />
+            <DynamicMenuStyle BackColor="#B5C7DE" />
+            <DynamicSelectedStyle BackColor="#507CD1" />
+            <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+            <StaticHoverStyle BackColor="#284E98" ForeColor="White" />
+            <Items>
+                <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/sreversucesspage.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="DIAGNOSE" Value="Cloud Server" NavigateUrl="~/graph.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="FILE REQUEST" Value="Data Owner" 
+                    NavigateUrl="~/requestfile.aspx"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Default.aspx" Text="LOGOUT" Value="User">
+                </asp:MenuItem>
+            </Items>
+        </asp:Menu>
+        
+    
+    
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
